@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiObject {
 
     companion object {
-        val baseUrl : String = ''
+        val baseUrl : String = ""
         fun create() : ApiInterFace = Retrofit.Builder()
             .baseUrl(baseUrl)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
